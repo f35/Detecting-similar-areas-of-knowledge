@@ -29,3 +29,5 @@ and brings F# to the [reveal.js][revealjs] web presentation framework.
 - [@troykershaw](https://github.com/troykershaw)
 
 The default maintainer account for projects under "fsprojects" is [@fsprojectsgit](https://github.com/fsprojectsgit) - F# Community Project Incubation Space (repo management)
+# Detecting-similar-areas-of-knowledge
+Detecting similar areas of knowledge presentation of the thesis for qualification as a computer scientist in the University of Cuenca.
