@@ -2,7 +2,7 @@
 - description : Thesis presentation in order to obtain the degree of Computer Scientist from the University of Cuenca.
 - author : Xavier Sumba
 - theme : white
-- transition : default
+- transition : none
 
 ***
 
@@ -213,7 +213,7 @@ organizada en el repositorio.
     google.load("visualization", "1", {packages:["corechart"]})
     google.setOnLoadCallback(drawChart);
 function drawChart() {
-    var data = new google.visualization.DataTable({"cols": [{"type": "string" ,"id": "Column 1" ,"label": "Column 1" }, {"type": "number" ,"id": "Column 2" ,"label": "Publicaciones" }], "rows" : [{"c" : [{"v": "Carvallo Vega, Juan Pablo"}, {"v": 24}]}, {"c" : [{"v": "Solano Quinde, Lizandro Damián"}, {"v": 9}]}, {"c" : [{"v": "Vanegas Peña, Paúl Fernando"}, {"v": 9}]}, {"c" : [{"v": "Espinoza Molina, Daniela"}, {"v": 8}]}, {"c" : [{"v": "Baquero Larriva, Andrés Orlando"}, {"v": 7}]}, {"c" : [{"v": "Saquicela Galarza, Víctor Hugo"}, {"v": 5}]}, {"c" : [{"v": "Abril Pozo, Daniel Andrés"}, {"v": 5}]}]});
+    var data = new google.visualization.DataTable({"cols": [{"type": "string" ,"id": "Column 1" ,"label": "Column 1" }, {"type": "number" ,"id": "Column 2" ,"label": "Publicaciones" }], "rows" : [{"c" : [{"v": "Carvallo Vega, Juan Pablo"}, {"v": 75}]}, {"c" : [{"v": "Conci, Aura"}, {"v": 72}]}, {"c" : [{"v": "Díaz Contreras, Jessica"}, {"v": 46}]}, {"c" : [{"v": "Vanegas, Pablo"}, {"v": 42}]}, {"c" : [{"v": "Espinoza, Mauricio"}, {"v": 42}]}, {"c" : [{"v": "Saquicela, Víctor"}, {"v": 35}]}, {"c" : [{"v": "Goethals, Peter L. M"}, {"v": 34}]}, {"c" : [{"v": "Castro Riera, Carlos "}, {"v": 31}]}, {"c" : [{"v": "Torres, Maria Eugenia"}, {"v": 30}]}, {"c" : [{"v": "Veronica Mora"}, {"v": 28}]}]});
     var options = {"hAxis":{"title":"Número de publicaciones","viewWindowMode":"explicit","viewWindow":{"min":0}},"legend":{"position":"none"},"title":"Investigadores Relevantes","width":1000,"height":600}
     var chart = new google.visualization.BarChart(document.getElementById('d58646cc-a055-47d1-8d4f-d9a17025c2d1'));
     chart.draw(data, options);
@@ -263,9 +263,24 @@ function drawChart() {
 
 ***
 
-# CLEI 2016
-
-![](images/clei.png)
+<table style="width:100%;">
+  <tr>
+    <th><h2 style="text-align: center">CLEI 2016</h2></th>
+    <th><h2 style="text-align: center">ENTCS</h2></th>
+    <th><h2 style="text-align: center">TICAL</h2></th>
+  </tr>
+  <tr>
+    <th style="width: 33%; vertical-align: middle;">
+      <img src="images/clei.png" alt="">
+    </th>
+    <th style="width: 33%; text-align:center; vertical-align: middle;">
+      <img src="images/entcs.gif" alt="">
+    </th>
+    <th style="width: 33%; text-align:center; vertical-align: middle;">
+      <img src="images/tical.png" alt="">
+    </th>
+  </tr>
+</table>
 
 ***
 
