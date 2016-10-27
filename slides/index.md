@@ -65,7 +65,7 @@
 
 ### Data Extraction
 <div style="text-align: justify; text-align: center;">Datos extraidos</div>
-<p><img src="images/correctPublicationsSource.png" alt=""></p>
+<p><img src="images/correctPublicationsSource.png" alt="" style="width:900px;height:500px"></p>
 
 ---
 
@@ -128,21 +128,17 @@
 
 <div style="font-size: 80%;">El modelo de datos basado en la ontología BIBO.</div>
 
-<div style="width:80%;height:75%;margin: auto;">
-<p><img src="images/dataModelCommon.png" alt=""></p>
-</div>
+<p><img src="images/dataModelCommon.png" alt="" style="width:900px;height:500px"></p>
 
 ---
 
 ### Data Enrichment
 #### Mapeo del modelo de datos
 
-<div style="font-size: 80%;">El modelo de datos de cada fuente es diferente, por lo cual se realiza un mapeo de la fuente al modelo de datos común y se almacena en el repositorio central.</div>
+<div style="font-size: 80%;">Integración de grafos.</div>
 
 
-<div style="width:80%;height:60%;margin: auto;">
-<p><img src="images/grafos.png" alt=""></p>
-</div>
+<p><img src="images/grafos.png" alt="" style="width:900px;height:500px"></p>
 
 ---
 
@@ -168,9 +164,7 @@
 ### Data Enrichment
 #### Desambiguación de información.
 <div style="font-size: 80%;">Indice de similaridad entre recursos bibliográfico.</div>
-<div style="width:120%;height:150%;">
-<p><img src="images/similaridad.png" alt=""></p>
-</div>
+<p><img src="images/similaridad.png" alt="" style="width:500px;height:300px"></p>
 
 ---
 
