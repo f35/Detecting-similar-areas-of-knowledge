@@ -2,7 +2,7 @@
 - description : Thesis presentation in order to obtain the degree of Computer Scientist from the University of Cuenca.
 - author : Xavier Sumba
 - theme : white
-- transition : default
+- transition : none
 
 ***
 
@@ -175,26 +175,116 @@
 ---
 
 ### Pattern Detection
-#### Proceso para la extracción de conocimiento
+#### Proceso para detección de areas y redes de colaboración
 
 ![](images/pdetection.png)
 
-*Find groups* detectar patrones de los datos almacenados en el repositorio central.
 
-*Knowledge Discovery* asociar patrones a un formato legible por un humano. Se descubre redes de colaboracón y áreas de
+<div style="font-size: 80%; text-align: justify;">
+<span style="color: red;">Find groups</span> detectar patrones de los datos almacenados en el repositorio central.
+
+<div class="fragment">
+<span style="color: red;">Knowledge Discovery</span> asociar patrones a un formato legible por un humano. Se descubre redes de colaboración y áreas de
 conocimiento.
+</div>
 
-*Label Groups* Se encuentra una etiqueta para cada cluster, ayuda a acelerar consultar y mantener la información
+<div class="fragment">
+<span style="color: red;">Label Groups</span> Se encuentra una etiqueta a cada cluster, ayuda a acelerar consultar y mantener la información
 organizada en el repositorio.
+</div>
+<div>
 
 ---
 
-### Pattern Detection
-#### Extracto de resultados obtenidos
+### Find Groups
+
+![](images/findgroups.png)
+
+---
+
+### Knowledge Discovery
+
+<table style="width:100%">
+  <tr>
+    <th style="width: 30%; vertical-align: middle;"><img src="images/fgroups_files.png" alt=""></th>
+    <th class="fragment" style="width: 70%"><img src="images/find_groups_process.png" alt=""></th>
+  </tr>
+</table>
+
+---
+
+# Topic Model + WordNet
+
+<div class="fragment">
+# =
+# Label
+</div>
+
+---
+### Topic Model
+![](images/lda.png)
+
+[Imagen de *David M. Blei* - Probabilistic Topic Models ](http://www.cs.princeton.edu/~blei/kdd-tutorial.pdf)
+
+' Frecuencia Distribución de palabras/topicos
+' Numero de topicos
+' Varios documentos a varios topicos
+
+---
+
+### Label Groups
+
+![](images/etiqueta.png)
+
+---
+
+### Datos listos para ser explotados
+
+![](images/export.png)
+
+---
+
+### Resultados
 
 ![](images/redes.png)
 
-e debe tener en cuenta que para mejorar la calidad de los resultados, se debe mejorar la calidad de los datos de las diferentes **bases bibliográficas** para obtener aún mejores resultados.
+---
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]})
+    google.setOnLoadCallback(drawChart);
+function drawChart() {
+    var data = new google.visualization.DataTable({"cols": [{"type": "string" ,"id": "Column 1" ,"label": "Column 1" }, {"type": "number" ,"id": "Column 2" ,"label": "Publicaciones" }], "rows" : [{"c" : [{"v": "Carvallo Vega, Juan Pablo"}, {"v": 75}]}, {"c" : [{"v": "Conci, Aura"}, {"v": 72}]}, {"c" : [{"v": "Díaz Contreras, Jessica"}, {"v": 46}]}, {"c" : [{"v": "Vanegas, Pablo"}, {"v": 42}]}, {"c" : [{"v": "Espinoza, Mauricio"}, {"v": 42}]}, {"c" : [{"v": "Saquicela, Víctor"}, {"v": 35}]}, {"c" : [{"v": "Goethals, Peter L. M"}, {"v": 34}]}, {"c" : [{"v": "Castro Riera, Carlos "}, {"v": 31}]}, {"c" : [{"v": "Torres, Maria Eugenia"}, {"v": 30}]}, {"c" : [{"v": "Veronica Mora"}, {"v": 28}]}]});
+    var options = {"hAxis":{"title":"Número de publicaciones","viewWindowMode":"explicit","viewWindow":{"min":0}},"legend":{"position":"none"},"title":"Investigadores Relevantes","width":1000,"height":600}
+    var chart = new google.visualization.BarChart(document.getElementById('d58646cc-a055-47d1-8d4f-d9a17025c2d1'));
+    chart.draw(data, options);
+}
+</script>
+<div id="d58646cc-a055-47d1-8d4f-d9a17025c2d1" style="width: 800px; height: 600px;"></div>
+
+---
+
+<table style="width:100%">
+  <tr>
+    <th style="width: 35%; vertical-align: middle;">
+      <h4 style="text-align: center">Areas Relevantes</h4>
+      <img src="images/wordcloud.png" alt="">
+    </th>
+    <th class="fragment" style="width: 65%">
+      <h4>Areas de colaboración</h4>
+      <img src="images/colaboracion.png" alt="">
+    </th>
+  </tr>
+</table>
+
+---
+
+
+# __¿Más?__
+
+
+[![](images/redi.png)](http://redi.cedia.org.ec/)
 
 ***
 
@@ -204,6 +294,7 @@ e debe tener en cuenta que para mejorar la calidad de los resultados, se debe me
 - Considerar que incluso para una persona es complicado determinar cierta información sobre un investigador o varios investigadores que pueden trabajar en conjunto. Por lo que aun es un reto a nivel computacional.
 - Además como resultado se cuenta con un repositorio centralizado y se provee el uso de estos datos a cualquier persona.
 
+
 ***
 
 ### Trabajos Futuros
@@ -212,9 +303,26 @@ e debe tener en cuenta que para mejorar la calidad de los resultados, se debe me
 - Mejorar el proceso de etiquetado.
 - Analizar nuevos algoritmos de clustering o otras técnicas para encontrar agrupaciones.
 
-__¿Mas información?__
+***
 
-[http://redi.cedia.org.ec/](http://redi.cedia.org.ec/)
+<table style="width:100%;">
+  <tr>
+    <th><h2 style="text-align: center">CLEI 2016</h2></th>
+    <th><h2 style="text-align: center">ENTCS</h2></th>
+    <th><h2 style="text-align: center">TICAL</h2></th>
+  </tr>
+  <tr>
+    <th style="width: 33%; vertical-align: middle;">
+      <img src="images/clei.png" alt="">
+    </th>
+    <th style="width: 33%; text-align:center; vertical-align: middle;">
+      <img src="images/entcs.gif" alt="">
+    </th>
+    <th style="width: 33%; text-align:center; vertical-align: middle;">
+      <img src="images/tical.png" alt="">
+    </th>
+  </tr>
+</table>
 
 ***
 
