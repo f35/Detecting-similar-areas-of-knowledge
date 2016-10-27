@@ -128,7 +128,7 @@
 
 <div style="font-size: 80%;">El modelo de datos basado en la ontología BIBO.</div>
 
-<p><img src="images/dataModelCommon.png" alt="" style="width:900px;height:500px"></p>
+<p><img src="images/dataModelCommon.png" alt="" style="width:750px;height:460px"></p>
 
 ---
 
@@ -139,6 +139,89 @@
 
 
 <p><img src="images/grafos.png" alt="" style="width:900px;height:500px"></p>
+
+
+---
+
+### Data Enrichment
+#### Desambiguación de autores.
+<div style="font-size: 80%;">Desambiguación de autores.</div>
+
+<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript">
+
+var width = 1100,
+    height = 800
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var force = d3.layout.force()
+    .gravity(.04)
+    .charge(-350)
+    .linkDistance(200)
+    .size([width, height]);
+
+d3.json("readme.json", function(error, json) {
+  if (error) throw error;
+
+  force
+      .nodes(json.nodes)
+      .links(json.links)
+      .start();
+
+  var link = svg.selectAll(".link")
+      .data(json.links)
+    .enter().append("line")
+      .attr("class", "link");
+
+  var node = svg.selectAll(".node")
+      .data(json.nodes)
+    .enter().append("g")
+      .attr("class", "node")
+      .call(force.drag);
+
+  node.append("image")
+      .attr("class", "circle")
+      .attr("xlink:href", function(d) { return d.icon; })
+      .attr("x", function(d) { if(d.node) {return "-35px";} else {return "-10px";}})
+      .attr("y", function(d) { if(d.node) {return "-35px";} else {return "0px";}})
+      .attr("width", function(d) { if(d.node) {return "75px";} else {return "35px";}})
+      .attr("height", function(d) { if(d.node) {return "75px";} else {return "35px";}});
+
+  node.append("title")
+      .text(function(d) { return d.subject; });
+
+  node.append("text")
+          .text(function(d) { return d.name; })
+          .style("fill", color)
+          .style("font-size", function(d) { if(d.node) {return "16px";} else {return "12px";}})
+
+          .attr("x", function(d) { if(d.node) {return "0";} else {return "0";}})
+          .attr("y", function(d) { if(d.node) {return "-35";} else {return "-5";}})
+;
+
+    function color(d) {
+            return d.node ? "#3182bd" : "#020507";
+          }
+
+
+
+
+
+  force.on("tick", function() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+  });
+});
+
+</script>
+</script>
 
 ---
 
@@ -284,7 +367,7 @@ function drawChart() {
 
 ### Conclusiones
 
-- Resultados están acorde a lo esperado, sin embargo, procesos como el de desambiguación y etiquetado necesitan un trabajo mas exhaustivo, debido a que aun se tienen ciertas inconsistencias en los resultados.
+- Procesos como el de desambiguación y etiquetado necesitan un trabajo mas exhaustivo, debido a que aun se tienen ciertas inconsistencias en los resultados.
 - Considerar que incluso para una persona es complicado determinar cierta información sobre un investigador o varios investigadores que pueden trabajar en conjunto. Por lo que aun es un reto a nivel computacional.
 - Además como resultado se cuenta con un repositorio centralizado y se provee el uso de estos datos a cualquier persona.
 
