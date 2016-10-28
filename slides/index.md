@@ -1,4 +1,4 @@
-- title : Detecting similar areas of knowledge using Semantic and Data Mining technologies
+ - title : Detecting similar areas of knowledge using Semantic and Data Mining technologies
 - description : Thesis presentation in order to obtain the degree of Computer Scientist from the University of Cuenca.
 - author : Xavier Sumba
 - theme : white
@@ -345,7 +345,7 @@ function drawChart() {
       <img src="images/wordcloud.png" alt="">
     </th>
     <th class="fragment" style="width: 65%">
-      <h4>Areas de colaboración</h4>
+      <h4>Redes de colaboración</h4>
       <img src="images/colaboracion.png" alt="">
     </th>
   </tr>
