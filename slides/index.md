@@ -49,30 +49,17 @@
 
 ---
 
-
-
-
-
-
 ### Data Extraction
 
 
-<div style="text-align: justify;">El modulo de extracción de datos se encarga de obtener y describir datos bibliográficos desde varias fuentes, utilizando tecnologías semánticas y principios de Linked Data.</div>
-
+<p><img src="images/providerImage.png" alt="" style="width:750px;height:460px"></p>
 <div style="text-align: justify;">El modelo de datos de la fuente es mapeado a un modelo común basado en la ontología BIBO.</div>
 
 ---
 
 ### Data Extraction
-<div style="text-align: justify; text-align: center;">Datos extraidos</div>
-<p><img src="images/correctPublicationsSource.png" alt="" style="width:900px;height:500px"></p>
-
----
-
-
-- class : withbackground
-
-**Ejemplo de diferencia entre atributos de DBLP y el modelo de datos común.**
+#### Análisis del modelo.
+<div style="text-align: justify;">Ejemplo de diferencia entre atributos de DBLP y el modelo de datos común.</div>
 
 <table style="font-size: large;">
 <thead>
@@ -119,6 +106,12 @@
 ' | dblp:pageNumbers              | bibo:numPages       |
 
 
+---
+
+### Data Extraction
+<div style="text-align: justify; text-align: center;">Datos extraidos</div>
+<p><img src="images/correctPublicationsSource.png" alt="" style="width:900px;height:500px"></p>
+
 
 
 ---
@@ -136,91 +129,94 @@
 #### Mapeo del modelo de datos
 
 <div style="font-size: 80%;">Integración de grafos.</div>
-
-
 <p><img src="images/grafos.png" alt="" style="width:900px;height:500px"></p>
 
+---
+
+### Data Enrichment
+<div style="font-size: 20px;">Recurso bibliográfico descrito usando la ontología BIBO.</div>
+<!-- HTML generated using hilite.me -->
+<blockquote style="font-size: 16px !important; text-align: left; border:none !important;width:80% !important" ><font color="#009900"><font color="#000000">&lt;?xml</font>&nbsp;<font color="#000066">version</font>=<font color="#65b249">&quot;1.0&quot;</font>&nbsp;<font color="#000066">encoding</font>=<font color="#65b249">&quot;UTF-8&quot;</font><font color="#000000">?&gt;</font></font><br/>
+<font color="#009900"><font color="#000000">&lt;rdf:RDF</font>&nbsp;<font color="#000066">xmlns:rdf</font>=<font color="#65b249">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</font>&nbsp;</font><br/>
+<font color="#009900">&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000066">xmlns:bibo</font>=<font color="#65b249">&quot;http://purl.org/ontology/bibo/&quot;</font>&nbsp;</font><br/>
+<font color="#009900">&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000066">xmlns:dc</font>=<font color="#65b249">&quot;http://purl.org/dc/terms/&quot;</font></font><br/>
+<font color="#009900">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000066">xmlns:foaf</font>=<font color="#65b249">&quot;http://xmlns.com/foaf/0.1/&quot;</font></font><br/>
+<font color="#009900">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000066">xmln border:none !important;width:80% !importants:owl</font>=<font color="#65b249">&quot;http://www.w3.org/2002/07/owl#&quot;</font><font color="#000000">&gt;</font></font><br/>
+&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;bibo:Document</font>&nbsp;<font color="#000066">rdf:about</font>=<font color="#65b249">&quot;http://ucuenca.edu.ec/wkhuska/publication/semantic-annotation-of-restful-&nbsp;services-using-external&quot;</font><font color="#000000">&gt;</font></font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;dc:title<font color="#000000">&gt;</font></font></font>Semantic&nbsp;Annonation&nbsp;of&nbsp;RESTful&nbsp;Services&nbsp;Using&nbsp;External&nbsp;Resources.<font color="#009900"><font color="#000000">&lt;/dc:title<font color="#000000">&gt;</font></font></font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;foaf:Organization</font>&nbsp;<font color="#000066">rdf:resource</font>=<font color="#65b249">&quot;http://dblp.uni-trier.de/&quot;</font>&nbsp;<font color="#000000">/&gt;</font></font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;dc:contributor</font>&nbsp;<font color="#000066">rdf:resource</font>=<font color="#65b249">&quot;http://dblp.dagstuhl.de/peers/s/Saquicela:Victor&quot;</font>&nbsp;<font color="#000000">/&gt;</font></font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;dc:contributor</font>&nbsp;<font color="#000066">rdf:resource</font>=<font color="#65b249">&quot;http://dblp.dagstuhl.de/peers/c/Corcho:=Oacute=scar&quot;</font>&nbsp;<font color="#000000">/&gt;</font></font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;dc:contributor</font>&nbsp;<font color="#000066">rdf:resource</font>=<font color="#65b249">&quot;http://dblp.dagstuhl.de/peers/b/BL=aacute=zquez:Luis_Manuel_Vilches&quot;</font>&nbsp;<font color="#000000">/&gt;</font></font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;owl:sameAs</font>&nbsp;<font color="#000066">rdf:resource</font>=<font color="#65b249">&quot;http://dblp.dagstuhl.de/rec/conf/icwe/SaquicelaVC10&quot;</font>&nbsp;<font color="#000000">/&gt;</font></font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;bibo:uri</font>&nbsp;<font color="#000066">rdf:resource</font>=<font color="#65b249">&quot;http://dx.doi.org/10.1007/978-3-642-16985-4_24&quot;</font>&nbsp;<font color="#000000">/&gt;</font></font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;bibo:numPages<font color="#000000">&gt;</font></font></font>266-276<font color="#009900"><font color="#000000">&lt;/bibo:numPages<font color="#000000">&gt;</font></font></font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;dc:license</font>&nbsp;<font color="#000066">rdf:resource</font>=<font color="#65b249">&quot;http://www.opendatacommons.org/licenses/by/&quot;</font>&nbsp;<font color="#000000">/&gt;</font></font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;dc:publisher<font color="#000000">&gt;</font></font></font>ICWE&nbsp;Workshops<font color="#009900"><font color="#000000">&lt;/dc:publisher<font color="#000000">&gt;</font></font></font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;dc:isPartOf</font>&nbsp;<font color="#000066">rdf:resource</font>=<font color="#65b249">&quot;http://dblp.dagstuhl.de/rec/rdf/conf/agile/conf/agile/config/iwce/2010w&quot;</font><font color="#000000">/&gt;</font></font><br/>
+&nbsp;&nbsp;&nbsp;<font color="#009900"><font color="#000000">&lt;/bibo:Document<font color="#000000">&gt;</font></font></font><br/>
+<font color="#009900"><font color="#000000">&lt;/rdf:RDF<font color="#000000">&gt;</font></font></font></blockquote>
 
 ---
 
 ### Data Enrichment
 #### Desambiguación de autores.
-<div style="font-size: 80%;">Desambiguación de autores.</div>
 
+<example style="width:900px;height:600px"></example>
 <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript">
-
-var width = 1100,
-    height = 800
-
-var svg = d3.select("body").append("svg")
+var width = 900,
+    height = 600
+var svg = d3.select("example").append("svg")
     .attr("width", width)
     .attr("height", height);
-
 var force = d3.layout.force()
     .gravity(.04)
     .charge(-350)
     .linkDistance(200)
     .size([width, height]);
-
-d3.json("readme.json", function(error, json) {
+d3.json("images/readme.json", function(error, json) {
   if (error) throw error;
-
   force
       .nodes(json.nodes)
       .links(json.links)
       .start();
-
   var link = svg.selectAll(".link")
       .data(json.links)
     .enter().append("line")
-      .attr("class", "link");
-
+      .style("stroke", "#777")
+      .style("stroke-width", "3px");
   var node = svg.selectAll(".node")
       .data(json.nodes)
     .enter().append("g")
       .attr("class", "node")
       .call(force.drag);
-
   node.append("image")
       .attr("class", "circle")
-      .attr("xlink:href", function(d) { return d.icon; })
+      .attr("xlink:href", function(d) { return "images/"+d.icon; })
       .attr("x", function(d) { if(d.node) {return "-35px";} else {return "-10px";}})
       .attr("y", function(d) { if(d.node) {return "-35px";} else {return "0px";}})
       .attr("width", function(d) { if(d.node) {return "75px";} else {return "35px";}})
       .attr("height", function(d) { if(d.node) {return "75px";} else {return "35px";}});
-
   node.append("title")
       .text(function(d) { return d.subject; });
-
   node.append("text")
           .text(function(d) { return d.name; })
           .style("fill", color)
           .style("font-size", function(d) { if(d.node) {return "16px";} else {return "12px";}})
-
           .attr("x", function(d) { if(d.node) {return "0";} else {return "0";}})
-          .attr("y", function(d) { if(d.node) {return "-35";} else {return "-5";}})
-;
-
+          .attr("y", function(d) { if(d.node) {return "-35";} else {return "-5";}});
     function color(d) {
             return d.node ? "#3182bd" : "#020507";
           }
-
-
-
-
-
   force.on("tick", function() {
     link.attr("x1", function(d) { return d.source.x; })
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
-
     node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
   });
 });
-
-</script>
 </script>
 
 ---
@@ -246,7 +242,7 @@ d3.json("readme.json", function(error, json) {
 
 ### Data Enrichment
 #### Desambiguación de información.
-<div style="font-size: 80%;">Indice de similaridad entre recursos bibliográfico.</div>
+<div style="font-size: 80%;">Índice de similaridad entre recursos bibliográfico.</div>
 <p><img src="images/similaridad.png" alt="" style="width:500px;height:300px"></p>
 
 ---
