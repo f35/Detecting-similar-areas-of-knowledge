@@ -12,7 +12,7 @@
 ##### <div style="font-size:18pt;"><a style="color: black;" href="http://cuent.tk">Xavier Sumba Toral</a> / <a style="color: black;" href="https://www.facebook.com/FERNANDO2654?fref=ts">Freddy Sumba Orellana</a></div>
 
 
-<div style="font-size:15pt;"><i>Universidad de Cuenca, Departamento de Ciencias de la Computación, Cuenca, Ecuador.</i></div>
+<div style="font-size:15pt;"><i>Universidad de Cuenca, Departamento de Ciencias de la Computación, Cuenca, Ecuador.</i></div>
 
 
 ![](images/uc.png)
@@ -21,9 +21,9 @@
 
 ### Introducción
 
-- ¿Quién trabaja en líneas de investigación parecidas?
-- ¿Cómo se puede crear una red de investigadores de un área en común, cuando no conocemos si estas existen?
-- Obtener sus artículos, conocer revistas en las que fueron aceptados, entre otros.
+- ¿Quién trabaja en líneas de investigación parecidas?
+- ¿Cómo se puede crear una red de investigadores de un área en común, cuando no conocemos si estas existen?
+- Obtener sus artículos, conocer revistas en las que fueron aceptados, entre otros.
 - Proyectos interinstitucionales.
 
 ***
@@ -37,12 +37,12 @@
 ### Arquitectura General
 
 ![an alternative text](images/platformDiagram.png)
+
 ***
----
 
 ### Resultados
 
-![](images/redes.png)
+![](images/areas.png)
 
 ---
 
@@ -59,6 +59,17 @@ function drawChart() {
 </script>
 <div id="d58646cc-a055-47d1-8d4f-d9a17025c2d1" style="width: 800px; height: 600px;"></div>
 
+---
+
+![](images/colaboracion.png)
+
+---
+
+![](images/estadisticas.png)
+
+---
+
+![](images/mapa.png)
 
 ---
 
@@ -71,18 +82,18 @@ function drawChart() {
 
 ### Conclusiones
 
-- Procesos como el de desambiguación y etiquetado necesitan un trabajo mas exhaustivo, debido a que aun se tienen ciertas inconsistencias en los resultados.
-- Considerar que incluso para una persona es complicado determinar cierta información sobre un investigador o varios investigadores que pueden trabajar en conjunto. Por lo que aun es un reto a nivel computacional.
-- Además como resultado se cuenta con un repositorio centralizado y se provee el uso de estos datos a cualquier persona.
+- Procesos como el de desambiguación y etiquetado necesitan un trabajo mas exhaustivo, debido a que aun se tienen ciertas inconsistencias en los resultados.
+- Considerar que incluso para una persona es complicado determinar cierta información sobre un investigador o varios investigadores que pueden trabajar en conjunto. Por lo que aun es un reto a nivel computacional.
+- Además como resultado se cuenta con un repositorio centralizado y se provee el uso de estos datos a cualquier persona.
 
 
 ***
 
 ### Trabajos Futuros
-- Mejorar procesos de extracción de datos.
-- Incluir el abstract para analizar redes de colaboración.
+- Mejorar procesos de extracción de datos.
+- Incluir el abstract para analizar redes de colaboración.
 - Mejorar el proceso de etiquetado.
-- Analizar nuevos algoritmos de clustering o otras técnicas para encontrar agrupaciones.
+- Analizar nuevos algoritmos de clustering o otras técnicas para encontrar agrupaciones.
 
 ***
 
