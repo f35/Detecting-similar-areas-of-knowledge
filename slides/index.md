@@ -37,12 +37,12 @@
 ### Arquitectura General
 
 ![an alternative text](images/platformDiagram.png)
+
 ***
----
 
 ### Resultados
 
-![](images/redes.png)
+![](images/areas.png)
 
 ---
 
@@ -59,6 +59,17 @@ function drawChart() {
 </script>
 <div id="d58646cc-a055-47d1-8d4f-d9a17025c2d1" style="width: 800px; height: 600px;"></div>
 
+---
+
+![](images/colaboracion.png)
+
+---
+
+![](images/estadisticas.png)
+
+---
+
+![](images/mapa.png)
 
 ---
 
@@ -116,4 +127,3 @@ function drawChart() {
 ***
 
 # ¿PREGUNTAS?
-
